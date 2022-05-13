@@ -8,7 +8,8 @@
 li{
     list-style-type: none;
 }
-.row{
+.row
+.explore__row{
     width: 100%;
     height: 100%;
 }
@@ -194,6 +195,7 @@ FEaTURES
 }
 .books{
     display: flex;
+    flex-wrap: wrap;
 }
 .book{
     padding: 24px;
@@ -224,4 +226,31 @@ FEaTURES
     text-decoration: line-through;
     color: #bfbfbf;
     padding-right: 6px
+}
+.latest__books__contaner{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* 
+explore more
+*/
+#explore__more{
+    background-color:  rgba(115, 66, 214, 0.1);
+}
+.explore__contaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    margin:  0 auto;
+}
+.row__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -7,11 +7,12 @@
     <title>Libary</title>
     <link rel="stylesheet" href="style.css">
     <script src="http://kit.fontawesome.com/ed4c7da091.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <section id="landing">
     <nav>
-        <div class="container">
+        <div class="nav__container">
             <figure class="logo">
                 <img src="./assets/Library.svg" class="logo__pic">
             </figure>
@@ -20,14 +21,31 @@
                 <li class="nav__link">Contact</li>
                 <li class="nav__link nav__link__praimary">Books</li>
             </ul>
-        </div>
-        <button class="button__menu">
+        <button class="button__menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
         </button>
-        <div class="mens__backdrop">
-            <button class="btn__menu btn__menu__close">
-                <i class=" fas fa-times"></i>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu__close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
             </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#" class="menu__link"  onclick="closeMenu()">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a href="#features" class="menu__link" onclick="closeMenu()">
+                        Books
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link no__cursor" onclick="closeMenu()">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
     <header>
@@ -38,8 +56,9 @@
             </h1>
             <h2>
                 find your dream book <span class="purple"> here</span>
-            </h2>
+            </h2> <a href="#features">
             <button class="btn"> Browse Books</button>
+            </a>
             </div>
             <figure class="header__img__wrapper">
                 <img src="./assets/Undraw_Books.svg" alt="">
